@@ -25,6 +25,7 @@ dependencies {
     implementation 'com.android.support:design:28.0.0'
     testImplementation 'junit:junit:4.12'
     implementation "org.apache.commons:commons-lang3:3.8"
+    implementation group: 'commons-io', name: 'commons-io', version: '2.6'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation files('libs/byte-buddy-1.8.15.jar')

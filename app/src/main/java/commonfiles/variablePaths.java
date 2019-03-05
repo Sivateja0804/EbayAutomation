@@ -1,4 +1,4 @@
-package com.ebay;
+package commonfiles;
 
 public class variablePaths {
     public static final String searchBox = "com.ebay.mobile:id/search_box";
@@ -15,10 +15,10 @@ public class variablePaths {
     public static final String cancel = "android:id/button2";
     public static final String homeBtn = "com.ebay.mobile:id/home";
     public static final String tvName = "com.ebay.mobile:id/textview_item_name";
-    //public static final String tvCheckoutName = "com.ebay.mobile:id/item_title";
+    public static final String tvCheckoutName = "com.ebay.mobile:id/item_title";
     public static final String tvPrice = "com.ebay.mobile:id/textview_item_price";
-//    public static final String tvCheckoutPrice = "com.ebay.mobile:id/bid_value";
-//    public static final String tvDescripton = "com.ebay.mobile:id/item_subtitle_textview";
+    public static final String reviewBtn = "com.ebay.mobile:id/take_action";
+    public static final String closeBtn = "Close";
     public static  String tvNameText = "";
-    public static  String tvPriceText = "";
+    public static  String tvCheckoutNameText = "";
 }

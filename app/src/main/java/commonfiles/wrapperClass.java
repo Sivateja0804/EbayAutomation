@@ -1,4 +1,4 @@
-package com.ebay;
+package commonfiles;
 
 import android.os.Build;
 import android.support.annotation.RequiresApi;
@@ -25,7 +25,7 @@ import static java.time.Duration.ofMillis;
 
 public class wrapperClass {
     int waitTime=20;
-    int min=1;
+    int min=0;
     @RequiresApi(api = Build.VERSION_CODES.O)
     public boolean webElementOperations(AndroidDriver driver, String operation, String type, String path, String text){
         WebElement element=null;
@@ -55,6 +55,15 @@ public class wrapperClass {
                 element.click();
                 element.clear();
                 element.sendKeys(text);
+            }
+            else if(operation.equalsIgnoreCase("isdisplayed")){
+                element=waitForElement(driver,type,path);
+                if (element != null){
+                    return element.isDisplayed();
+                }else{
+                    return false;
+                }
+
             }
             if (element!=null){
                 return true;
