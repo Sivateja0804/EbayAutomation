@@ -19,10 +19,8 @@ public class LoginPage {
             wrapperClass.webElementOperations(androidDriver, "wait","id",variablePaths.signIn, null);
             wrapperClass.webElementOperations(androidDriver, "click","id",variablePaths.signIn, null);
             if (wrapperClass.webElementOperations(androidDriver, "isdisplayed","id",variablePaths.userName,variablePaths.userName_details)){
-                screen.takeScreenshot("Signinpage");
                 return true;
             }else{
-                screen.takeScreenshot("SignInFail");
                 return false;
             }
         }catch (Exception ex){

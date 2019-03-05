@@ -20,7 +20,7 @@ public class CheckOutPage {
             wrapperClass.webElementOperations(androidDriver, "wait","id",variablePaths.tvCheckoutName, null);
             screen.takeScreenshot("checkoutpage");
             variablePaths.tvCheckoutNameText =wrapperClass.getText(androidDriver,"id",variablePaths.tvCheckoutName);
-            if (wrapperClass.webElementOperations(androidDriver, "click","id",variablePaths.closeBtn, null)){
+            if (!variablePaths.tvCheckoutNameText.isEmpty()){
                 return true;
             }else{
                 screen.takeScreenshot("checkoutFailure");
